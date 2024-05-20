@@ -53,7 +53,7 @@ namespace SQStok.Stok
                     int urunId = urun.Id;
                     var envanter = context.Envanters.FirstOrDefault(x => x.UrunID == urunId);
 
-                    // Ürün daha önce satın alındıysa mevcut envanter satırındaki adet miktarını artırın
+                    // Ürün daha önce satın alındıysa mevcut envanter satırındaki adet miktarını artırın  
                     if (envanter != null)
                     {
                         envanter.Adet += adet;

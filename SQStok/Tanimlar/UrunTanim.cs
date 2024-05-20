@@ -74,7 +74,7 @@ namespace SQStok.Stok
         {
             using (var context = new SQStokDbContext())
             {
-                // MarkaId'ye ve KategoriId'ye göre Modeller tablosundan ilgili modelleri seç
+                // MarkaId'ye ve KategoriId'ye göre Modeller tablosundan ilgili modelleri seç   
                 return context.Models
                     .Where(m => m.MarkaId == markaId && m.KategoriId == kategoriId)
                     .ToList();

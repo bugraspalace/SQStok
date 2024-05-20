@@ -43,8 +43,8 @@ namespace SQStok
             }
 
             aktifForm = yeniForm;
-            aktifForm.MdiParent = this; // MDI parent olarak ayarla
-            aktifForm.WindowState = FormWindowState.Maximized; // Tam ekran yap
+            aktifForm.MdiParent = this; // MDI parent olarak ayarla   
+            aktifForm.WindowState = FormWindowState.Maximized; // Tam ekran yap   
             aktifForm.Show();
         }
 
